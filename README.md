@@ -1,2 +1,2 @@
 # Davchee
-A professional electrical and engineering service website
+A professional electrical and engineering services website
