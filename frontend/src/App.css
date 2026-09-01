@@ -11,3 +11,7 @@ iframe[src*="netlify"],
   background-size: cover;
   background-position: center;
 } */
+
+.cursive {
+  font-family: 'Dancing Script', cursive;
+}

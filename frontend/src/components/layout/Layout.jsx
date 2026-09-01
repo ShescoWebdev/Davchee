@@ -1,14 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Button from "../common/Button";
 
 function Layout() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-1">
+      <main className="flex-1 flex-col items-center justify-center">
         <Outlet />
       </main>
 
