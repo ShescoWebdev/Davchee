@@ -28,6 +28,7 @@ export default function Navbar() {
       <nav ref={navRef} className="bg-white fixed w-full z-10 top-0 pt-3 pb-4 md:p-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
+            <NavLink to="/" >
             <div className="flex items-center space-x-[-1.2rem] md:space-x-[-3rem]">
               <img className="
               sm:h-12 
@@ -36,9 +37,10 @@ export default function Navbar() {
               w-auto" 
               src="Logo1.png" 
               alt="Logo" />
-
+              
               <h1 className="text-xl md:text-5xl font-bold text-[#08253a]">Davechee</h1>
             </div>
+            </NavLink>
 
             {/* Desktop view */}
             <div className="hidden sm:flex sm:items-center sm:space-x-8">
