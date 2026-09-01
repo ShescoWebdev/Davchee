@@ -35,7 +35,7 @@ export default function Navbar() {
               h-20 
               md:h-[10rem] 
               w-auto" 
-              src="Logo1.png" 
+              src="/Logo1.png" 
               alt="Logo" />
               
               <h1 className="text-xl md:text-5xl font-bold text-[#08253a]">Davechee</h1>
