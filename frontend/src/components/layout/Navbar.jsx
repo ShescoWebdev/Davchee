@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav ref={navRef} className="bg-white fixed w-full z-10 top-0 pt-3 pb-4 md:p-14">
+      <nav ref={navRef} className="bg-gray-200 fixed w-full z-10 top-0 pt-3 pb-4 md:p-14 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <NavLink to="/" >
@@ -35,9 +35,9 @@ export default function Navbar() {
               h-20 
               md:h-[10rem] 
               w-auto" 
-              src="/Logo1.png" 
+              src="Logo1.png" 
               alt="Logo" />
-              
+
               <h1 className="text-xl md:text-5xl font-bold text-[#08253a]">Davechee</h1>
             </div>
             </NavLink>
@@ -53,7 +53,7 @@ export default function Navbar() {
                     `inline-flex items-center px-1 pt-1 text-sm md:text-2xl font-medium border-b-2 ${
                       isActive
                         ? 'border-[#0f65a3] text-[#0f4164]'
-                        : 'border-transparent text-[#0f4164] hover:border-[#fd7c02] hover:text-[#fd7c02]'
+                        : 'border-transparent text-[#0f4164] hover:border-[#bc6412] hover:text-[#bc6412]'
                     }`
                   }
                 >
@@ -103,7 +103,7 @@ export default function Navbar() {
                     `block px-2 py-1 text-lg font-medium border-b-2 w-fit ${
                       isActive
                         ? 'border-[#0f65a3] text-[#0f4164]'
-                        : 'border-transparent text-[#0f4164] hover:border-[#fd7c02] hover:text-[#fd7c02]'
+                        : 'border-transparent text-[#0f4164] hover:border-[#bc6412] hover:text-[#bc6412]'
                     }`
                   }
                 >

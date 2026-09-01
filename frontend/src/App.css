@@ -5,3 +5,9 @@ iframe[src*="netlify"],
 [class*="netlify"] {
   display: none !important;
 }
+
+/* .home{
+  background-image: url('/Chido.png');
+  background-size: cover;
+  background-position: center;
+} */
