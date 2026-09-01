@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
+import { AlignRight, X } from 'lucide-react'
 import Button from '../common/Button'
 
 const navLinks = [
@@ -68,23 +69,16 @@ export default function Navbar() {
               onClick={() => setIsOpen((prev) => !prev)}
               aria-label="Toggle menu"
               aria-expanded={isOpen}
-              className="sm:hidden relative w-8 h-6 flex-shrink-0
-              cursor-pointer transition-all duration-300 ease-in-out
-              "
+              className="sm:hidden ml-auto relative w-8 h-8 flex-shrink-0 cursor-pointer"
             >
-              <span
-                className={`absolute left-0 w-full h-1 bg-[#0f4164] rounded transition-all duration-300 ease-in-out ${
-                  isOpen ? 'top-1/2 -translate-y-1/2 rotate-45' : 'top-0'
+              <AlignRight
+                className={`absolute inset-[-0.5rem] w-10 h-10 text-[#0f4164] transition-all duration-300 ease-in-out ${
+                  isOpen ? 'opacity-0 rotate-90 scale-75' : 'opacity-100 rotate-0 scale-100'
                 }`}
               />
-              <span
-                className={`absolute left-0 top-1/2 -translate-y-1/2 w-full h-1 bg-[#0f4164] rounded transition-all duration-300 ease-in-out ${
-                  isOpen ? 'opacity-0' : 'opacity-100'
-                }`}
-              />
-              <span
-                className={`absolute left-0 w-full h-1 bg-[#0f4164] rounded transition-all duration-300 ease-in-out ${
-                  isOpen ? 'top-1/2 -translate-y-1/2 -rotate-45' : 'bottom-0'
+              <X
+                className={`absolute inset-[-0.5rem] w-10 h-10 text-[#0f4164] transition-all duration-300 ease-in-out ${
+                  isOpen ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-75'
                 }`}
               />
             </button>
