@@ -77,7 +77,7 @@ export default function Navbar() {
                 }`}
               />
               <X
-                className={`absolute inset-[-0.5rem] w-10 h-10 text-[#0f4164] transition-all duration-300 ease-in-out ${
+                className={`absolute inset-0 w-10 h-10 text-[#0f4164] transition-all duration-300 ease-in-out ${
                   isOpen ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-75'
                 }`}
               />
