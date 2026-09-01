@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+/* Hides Netlify badge element or iframe */
+iframe[src*="netlify"],
+[class*="netlify"] {
+  display: none !important;
+}
